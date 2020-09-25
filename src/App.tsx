@@ -7,7 +7,6 @@ import { CardList } from "./CardList";
 function App() {
   const [usersInfo, setUsersInfo] = useState<any[]>([]);
   const getUser = (userName: string) => {
-    console.log(userName);
     axios
       .get("https://api.github.com/users/" + userName)
       .then((res) => {
